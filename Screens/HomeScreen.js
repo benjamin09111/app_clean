@@ -29,42 +29,7 @@ export default function HomeScreen() {
         obtenerDatos()
     },[])
     return (
-        <View>
-            <Text>Hola</Text>
-            <ScrollView showsVerticalScrollIndicator={false}
-            >
-            {datos.map((item,index)=>{
-                return (
-                    <View key={index}>
-                        <Card containerStyle={{marginLeft:30, marginRight:30, marginTop:10, height:300}} wrapperStyle={{}}>
-                            <Card.Title onPress={()=>{navigation.navigate('PostScreen',{userId: item.id})}}>{item.name}</Card.Title>
-                            <Card.Divider />
-                            <View
-                                style={{
-                                    position: "relative",
-                                    alignItems: "center"
-                                }}
-                            >
-                                <Image
-                                    style={{ width: "100%", height: 200 }}
-                                    resizeMode="contain"
-                                    source={{
-                                        uri:
-                                            "https://avatars0.githubusercontent.com/u/32242596?s=460&u=1ea285743fc4b083f95d6ee0be2e7bb8dcfc676e&v=4"
-                                    }}
-                                />
-                                <Text>{item.nickname}  HOLA QUE PASA CHAVALES</Text>
-                            </View>
-                        </Card>
-
-                    </View>
-
-                )
-            })}
-                    </ScrollView>
-        </View>
-    );
-}
+       //aaa
 
 const styles = StyleSheet.create({
     container: {
