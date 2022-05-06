@@ -30,6 +30,7 @@ export default function HomeScreen() {
     },[])
     return (
         <View>
+            <Text>Hola</Text>
             <ScrollView showsVerticalScrollIndicator={false}
             >
             {datos.map((item,index)=>{
